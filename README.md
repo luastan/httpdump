@@ -18,8 +18,8 @@ httpdump 127.0.0.1:3000
 
 ## Installation
 
-Using go get:
+Using go install:
 
 ```
-go get github.com/luastan/httpdump
+go install github.com/luastan/httpdump@latest
 ```
