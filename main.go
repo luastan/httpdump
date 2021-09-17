@@ -30,7 +30,7 @@ func requestHandler(w http.ResponseWriter, req *http.Request) {
 		return
 	} else {
 		println(string(requestDump))
-		_, err := fmt.Fprintf(w, "<html><title>httpdump<title><body><pre>\n%s\n</pre></body></html>\n", string(requestDump))
+		_, err := fmt.Fprintf(w, "<html><title>httpdump</title><body><pre>\n%s\n</pre></body></html>\n", string(requestDump))
 		if err != nil {
 			ErrorLogger.Println("Error writing the response")
 		}
